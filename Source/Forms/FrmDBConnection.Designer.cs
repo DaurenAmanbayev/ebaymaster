@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDBConnection));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panelSQLServer = new System.Windows.Forms.Panel();
@@ -54,11 +55,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 38);
+            this.label1.Location = new System.Drawing.Point(64, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "数据库类型";
+            this.label1.Text = "Database types";
             // 
             // groupBox1
             // 
@@ -67,9 +68,9 @@
             this.groupBox1.Controls.Add(this.rbSqlServer);
             this.groupBox1.Controls.Add(this.rbAccess);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(27, 12);
+            this.groupBox1.Location = new System.Drawing.Point(27, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(514, 280);
+            this.groupBox1.Size = new System.Drawing.Size(514, 303);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -83,118 +84,118 @@
             this.panelSQLServer.Controls.Add(this.label4);
             this.panelSQLServer.Controls.Add(this.textBoxSQLServerDBAddr);
             this.panelSQLServer.Controls.Add(this.label3);
-            this.panelSQLServer.Location = new System.Drawing.Point(7, 133);
+            this.panelSQLServer.Location = new System.Drawing.Point(7, 144);
             this.panelSQLServer.Name = "panelSQLServer";
-            this.panelSQLServer.Size = new System.Drawing.Size(501, 186);
+            this.panelSQLServer.Size = new System.Drawing.Size(501, 202);
             this.panelSQLServer.TabIndex = 13;
             this.panelSQLServer.Visible = false;
             // 
             // textBoxSQLServerPassword
             // 
-            this.textBoxSQLServerPassword.Location = new System.Drawing.Point(206, 155);
+            this.textBoxSQLServerPassword.Location = new System.Drawing.Point(206, 168);
             this.textBoxSQLServerPassword.Name = "textBoxSQLServerPassword";
-            this.textBoxSQLServerPassword.Size = new System.Drawing.Size(200, 21);
+            this.textBoxSQLServerPassword.Size = new System.Drawing.Size(200, 20);
             this.textBoxSQLServerPassword.TabIndex = 18;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(55, 158);
+            this.label6.Location = new System.Drawing.Point(55, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 12);
+            this.label6.Size = new System.Drawing.Size(86, 13);
             this.label6.TabIndex = 17;
             this.label6.Text = "SQL Server密码";
             // 
             // textBoxSQLServerUserId
             // 
-            this.textBoxSQLServerUserId.Location = new System.Drawing.Point(206, 110);
+            this.textBoxSQLServerUserId.Location = new System.Drawing.Point(206, 119);
             this.textBoxSQLServerUserId.Name = "textBoxSQLServerUserId";
-            this.textBoxSQLServerUserId.Size = new System.Drawing.Size(200, 21);
+            this.textBoxSQLServerUserId.Size = new System.Drawing.Size(200, 20);
             this.textBoxSQLServerUserId.TabIndex = 16;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 113);
+            this.label5.Location = new System.Drawing.Point(55, 122);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 12);
+            this.label5.Size = new System.Drawing.Size(110, 13);
             this.label5.TabIndex = 15;
-            this.label5.Text = "SQL Server用户名";
+            this.label5.Text = "SQL Serve Username";
             // 
             // textBoxSQLServerDBName
             // 
-            this.textBoxSQLServerDBName.Location = new System.Drawing.Point(206, 64);
+            this.textBoxSQLServerDBName.Location = new System.Drawing.Point(206, 69);
             this.textBoxSQLServerDBName.Name = "textBoxSQLServerDBName";
-            this.textBoxSQLServerDBName.Size = new System.Drawing.Size(200, 21);
+            this.textBoxSQLServerDBName.Size = new System.Drawing.Size(200, 20);
             this.textBoxSQLServerDBName.TabIndex = 14;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 67);
+            this.label4.Location = new System.Drawing.Point(55, 73);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 12);
+            this.label4.Size = new System.Drawing.Size(142, 13);
             this.label4.TabIndex = 13;
-            this.label4.Text = "SQL Server数据库库名";
+            this.label4.Text = "SQL Server Database Name";
             // 
             // textBoxSQLServerDBAddr
             // 
-            this.textBoxSQLServerDBAddr.Location = new System.Drawing.Point(206, 14);
+            this.textBoxSQLServerDBAddr.Location = new System.Drawing.Point(206, 15);
             this.textBoxSQLServerDBAddr.Name = "textBoxSQLServerDBAddr";
-            this.textBoxSQLServerDBAddr.Size = new System.Drawing.Size(200, 21);
+            this.textBoxSQLServerDBAddr.Size = new System.Drawing.Size(200, 20);
             this.textBoxSQLServerDBAddr.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 17);
+            this.label3.Location = new System.Drawing.Point(55, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 12);
+            this.label3.Size = new System.Drawing.Size(145, 13);
             this.label3.TabIndex = 12;
-            this.label3.Text = "SQL Server数据库地址";
+            this.label3.Text = "SQL Server Database Server";
             // 
             // panelAccess
             // 
             this.panelAccess.Controls.Add(this.buttonNavigateItemImage);
             this.panelAccess.Controls.Add(this.textBoxAccessFilePath);
             this.panelAccess.Controls.Add(this.label2);
-            this.panelAccess.Location = new System.Drawing.Point(6, 77);
+            this.panelAccess.Location = new System.Drawing.Point(6, 83);
             this.panelAccess.Name = "panelAccess";
-            this.panelAccess.Size = new System.Drawing.Size(502, 49);
+            this.panelAccess.Size = new System.Drawing.Size(502, 53);
             this.panelAccess.TabIndex = 12;
             // 
             // buttonNavigateItemImage
             // 
-            this.buttonNavigateItemImage.Location = new System.Drawing.Point(426, 14);
+            this.buttonNavigateItemImage.Location = new System.Drawing.Point(426, 15);
             this.buttonNavigateItemImage.Name = "buttonNavigateItemImage";
-            this.buttonNavigateItemImage.Size = new System.Drawing.Size(66, 23);
+            this.buttonNavigateItemImage.Size = new System.Drawing.Size(66, 25);
             this.buttonNavigateItemImage.TabIndex = 9;
-            this.buttonNavigateItemImage.Text = "浏览";
+            this.buttonNavigateItemImage.Text = "Browse...";
             this.buttonNavigateItemImage.UseVisualStyleBackColor = true;
             this.buttonNavigateItemImage.Click += new System.EventHandler(this.buttonNavigateItemImage_Click);
             // 
             // textBoxAccessFilePath
             // 
-            this.textBoxAccessFilePath.Location = new System.Drawing.Point(104, 16);
+            this.textBoxAccessFilePath.Location = new System.Drawing.Point(104, 17);
             this.textBoxAccessFilePath.Name = "textBoxAccessFilePath";
-            this.textBoxAccessFilePath.Size = new System.Drawing.Size(316, 21);
+            this.textBoxAccessFilePath.Size = new System.Drawing.Size(316, 20);
             this.textBoxAccessFilePath.TabIndex = 11;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 19);
+            this.label2.Location = new System.Drawing.Point(9, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 12);
+            this.label2.Size = new System.Drawing.Size(100, 13);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Access文件路径";
+            this.label2.Text = "Access the file path";
             // 
             // rbSqlServer
             // 
             this.rbSqlServer.AutoSize = true;
-            this.rbSqlServer.Location = new System.Drawing.Point(303, 36);
+            this.rbSqlServer.Location = new System.Drawing.Point(303, 39);
             this.rbSqlServer.Name = "rbSqlServer";
-            this.rbSqlServer.Size = new System.Drawing.Size(101, 16);
+            this.rbSqlServer.Size = new System.Drawing.Size(99, 17);
             this.rbSqlServer.TabIndex = 2;
             this.rbSqlServer.Text = "MS SQL Server";
             this.rbSqlServer.UseVisualStyleBackColor = true;
@@ -204,9 +205,9 @@
             // 
             this.rbAccess.AutoSize = true;
             this.rbAccess.Checked = true;
-            this.rbAccess.Location = new System.Drawing.Point(166, 36);
+            this.rbAccess.Location = new System.Drawing.Point(166, 39);
             this.rbAccess.Name = "rbAccess";
-            this.rbAccess.Size = new System.Drawing.Size(77, 16);
+            this.rbAccess.Size = new System.Drawing.Size(79, 17);
             this.rbAccess.TabIndex = 1;
             this.rbAccess.TabStop = true;
             this.rbAccess.Text = "MS Access";
@@ -215,23 +216,24 @@
             // 
             // buttonSaveConfig
             // 
-            this.buttonSaveConfig.Location = new System.Drawing.Point(240, 318);
+            this.buttonSaveConfig.Location = new System.Drawing.Point(240, 328);
             this.buttonSaveConfig.Name = "buttonSaveConfig";
-            this.buttonSaveConfig.Size = new System.Drawing.Size(66, 23);
+            this.buttonSaveConfig.Size = new System.Drawing.Size(86, 42);
             this.buttonSaveConfig.TabIndex = 12;
-            this.buttonSaveConfig.Text = "保存设置";
+            this.buttonSaveConfig.Text = "Save Settings";
             this.buttonSaveConfig.UseVisualStyleBackColor = true;
             this.buttonSaveConfig.Click += new System.EventHandler(this.buttonSaveConfig_Click);
             // 
             // FrmDBConnection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 350);
+            this.ClientSize = new System.Drawing.Size(573, 379);
             this.Controls.Add(this.buttonSaveConfig);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmDBConnection";
-            this.Text = "数据库连接设置";
+            this.Text = "Database connection settings";
             this.Load += new System.EventHandler(this.FrmDBConnection_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
