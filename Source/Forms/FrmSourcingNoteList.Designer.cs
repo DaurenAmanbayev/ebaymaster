@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSourcingNoteList));
             this.contextMenuStripSourcingNote = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItemEditNote = new System.Windows.Forms.ToolStripMenuItem();
             this.pagedDgvSourcingNote = new EbayMaster.PagedDataGridView();
@@ -40,12 +41,12 @@
             this.contextMenuStripSourcingNote.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItemEditNote});
             this.contextMenuStripSourcingNote.Name = "contextMenuStripDeliveryNote";
-            this.contextMenuStripSourcingNote.Size = new System.Drawing.Size(137, 26);
+            this.contextMenuStripSourcingNote.Size = new System.Drawing.Size(135, 26);
             // 
             // ToolStripMenuItemEditNote
             // 
             this.ToolStripMenuItemEditNote.Name = "ToolStripMenuItemEditNote";
-            this.ToolStripMenuItemEditNote.Size = new System.Drawing.Size(136, 22);
+            this.ToolStripMenuItemEditNote.Size = new System.Drawing.Size(134, 22);
             this.ToolStripMenuItemEditNote.Text = "编辑采购单";
             this.ToolStripMenuItemEditNote.Click += new System.EventHandler(this.ToolStripMenuItemEditNote_Click);
             // 
@@ -53,16 +54,18 @@
             // 
             this.pagedDgvSourcingNote.Location = new System.Drawing.Point(-2, -4);
             this.pagedDgvSourcingNote.Name = "pagedDgvSourcingNote";
-            this.pagedDgvSourcingNote.Size = new System.Drawing.Size(983, 463);
+            this.pagedDgvSourcingNote.Size = new System.Drawing.Size(983, 502);
             this.pagedDgvSourcingNote.TabIndex = 0;
             // 
             // FrmSourcingNoteList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 471);
+            this.ClientSize = new System.Drawing.Size(993, 510);
             this.Controls.Add(this.pagedDgvSourcingNote);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSourcingNoteList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "采购单列表";
             this.Load += new System.EventHandler(this.FrmSourcingNoteList_Load);
             this.contextMenuStripSourcingNote.ResumeLayout(false);

@@ -140,3 +140,25 @@
 [2013-12-21 13:40:34] select count(*) from [Transaction] where IsDelivered=false
 [2013-12-21 13:40:35] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
 [2013-12-21 13:40:35] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[20.02.2017 17:17:46] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:47] select count(*) from [Transaction] where IsDelivered=false
+[20.02.2017 17:17:48] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:48] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[20.02.2017 17:17:53] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:53] select count(*) from [ActiveListing]
+[20.02.2017 17:17:53] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:53] select * from [ActiveListing] where ListId in (select top 15 sub.ListId from ( select top 15 ListId,StartTime from [ActiveListing] order by StartTime desc) [sub] order by sub.StartTime) order by StartTime desc
+[20.02.2017 17:17:54] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:54] select count(*) from [Message]
+[20.02.2017 17:17:54] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:54] select * from [Message] where MessageId in (select top 15 sub.MessageId from ( select top 15 MessageId,ReceiveDate from [Message] order by ReceiveDate desc) [sub] order by sub.ReceiveDate) order by ReceiveDate desc
+[20.02.2017 17:17:55] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:55] select count(*) from [Transaction] where IsBuyerLeftFeedback=0 and IsPaid=true and IsReceived=false and ShippedDate<#20.02.2017#
+[20.02.2017 17:17:55] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:55] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate from [Transaction] where (Transaction.IsBuyerLeftFeedback=false and Transaction.ShippedDate<#20.02.2017#) order by SaleDate desc) [sub] order by sub.SaleDate) order by SaleDate desc
+[20.02.2017 17:17:56] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:56] select count(*) from [Transaction] where IsDelivered=false
+[20.02.2017 17:17:56] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:17:56] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[20.02.2017 17:18:00] Error : Сообщение об ошибке не предусмотрено, код результата: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[20.02.2017 17:18:00] select * from [Category]

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReplyBuyerMessage));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnManageMessageTemplate = new System.Windows.Forms.Button();
             this.tvMessageTemplates = new System.Windows.Forms.TreeView();
@@ -42,53 +43,53 @@
             // 
             this.groupBox1.Controls.Add(this.btnManageMessageTemplate);
             this.groupBox1.Controls.Add(this.tvMessageTemplates);
-            this.groupBox1.Location = new System.Drawing.Point(23, 12);
+            this.groupBox1.Location = new System.Drawing.Point(23, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(622, 240);
+            this.groupBox1.Size = new System.Drawing.Size(622, 260);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "模板";
             // 
             // btnManageMessageTemplate
             // 
-            this.btnManageMessageTemplate.Location = new System.Drawing.Point(19, 206);
+            this.btnManageMessageTemplate.Location = new System.Drawing.Point(19, 223);
             this.btnManageMessageTemplate.Name = "btnManageMessageTemplate";
-            this.btnManageMessageTemplate.Size = new System.Drawing.Size(88, 23);
+            this.btnManageMessageTemplate.Size = new System.Drawing.Size(88, 25);
             this.btnManageMessageTemplate.TabIndex = 7;
             this.btnManageMessageTemplate.Text = "管理消息模板";
             this.btnManageMessageTemplate.UseVisualStyleBackColor = true;
             // 
             // tvMessageTemplates
             // 
-            this.tvMessageTemplates.Location = new System.Drawing.Point(19, 20);
+            this.tvMessageTemplates.Location = new System.Drawing.Point(19, 22);
             this.tvMessageTemplates.Name = "tvMessageTemplates";
-            this.tvMessageTemplates.Size = new System.Drawing.Size(575, 180);
+            this.tvMessageTemplates.Size = new System.Drawing.Size(575, 195);
             this.tvMessageTemplates.TabIndex = 1;
             this.tvMessageTemplates.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvMessageTemplates_AfterSelect);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rtbMessageToSend);
-            this.groupBox2.Location = new System.Drawing.Point(23, 258);
+            this.groupBox2.Location = new System.Drawing.Point(23, 280);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(622, 178);
+            this.groupBox2.Size = new System.Drawing.Size(622, 193);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "正文";
             // 
             // rtbMessageToSend
             // 
-            this.rtbMessageToSend.Location = new System.Drawing.Point(19, 20);
+            this.rtbMessageToSend.Location = new System.Drawing.Point(19, 22);
             this.rtbMessageToSend.Name = "rtbMessageToSend";
-            this.rtbMessageToSend.Size = new System.Drawing.Size(575, 143);
+            this.rtbMessageToSend.Size = new System.Drawing.Size(575, 155);
             this.rtbMessageToSend.TabIndex = 3;
             this.rtbMessageToSend.Text = "";
             // 
             // buttonSendMessage
             // 
-            this.buttonSendMessage.Location = new System.Drawing.Point(295, 445);
+            this.buttonSendMessage.Location = new System.Drawing.Point(295, 482);
             this.buttonSendMessage.Name = "buttonSendMessage";
-            this.buttonSendMessage.Size = new System.Drawing.Size(75, 23);
+            this.buttonSendMessage.Size = new System.Drawing.Size(75, 25);
             this.buttonSendMessage.TabIndex = 7;
             this.buttonSendMessage.Text = "发送消息";
             this.buttonSendMessage.UseVisualStyleBackColor = true;
@@ -96,13 +97,15 @@
             // 
             // FrmReplyBuyerMessage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 481);
+            this.ClientSize = new System.Drawing.Size(664, 521);
             this.Controls.Add(this.buttonSendMessage);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmReplyBuyerMessage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "回复买家消息";
             this.Load += new System.EventHandler(this.FrmReplyBuyerMessage_Load);
             this.groupBox1.ResumeLayout(false);

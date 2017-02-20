@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSupplierList));
             this.contextMenuStripSupplier = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItemEditSupplier = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemDelSupplier = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,27 +44,27 @@
             this.ToolStripMenuItemEditSupplier,
             this.ToolStripMenuItemDelSupplier});
             this.contextMenuStripSupplier.Name = "contextMenuStripSupplier";
-            this.contextMenuStripSupplier.Size = new System.Drawing.Size(137, 48);
+            this.contextMenuStripSupplier.Size = new System.Drawing.Size(135, 48);
             // 
             // ToolStripMenuItemEditSupplier
             // 
             this.ToolStripMenuItemEditSupplier.Name = "ToolStripMenuItemEditSupplier";
-            this.ToolStripMenuItemEditSupplier.Size = new System.Drawing.Size(136, 22);
+            this.ToolStripMenuItemEditSupplier.Size = new System.Drawing.Size(134, 22);
             this.ToolStripMenuItemEditSupplier.Text = "编辑供应商";
             this.ToolStripMenuItemEditSupplier.Click += new System.EventHandler(this.ToolStripMenuItemEditSupplier_Click);
             // 
             // ToolStripMenuItemDelSupplier
             // 
             this.ToolStripMenuItemDelSupplier.Name = "ToolStripMenuItemDelSupplier";
-            this.ToolStripMenuItemDelSupplier.Size = new System.Drawing.Size(136, 22);
+            this.ToolStripMenuItemDelSupplier.Size = new System.Drawing.Size(134, 22);
             this.ToolStripMenuItemDelSupplier.Text = "删除供应商";
             this.ToolStripMenuItemDelSupplier.Click += new System.EventHandler(this.ToolStripMenuItemDelSupplier_Click);
             // 
             // btnFinishSelecting
             // 
-            this.btnFinishSelecting.Location = new System.Drawing.Point(384, 407);
+            this.btnFinishSelecting.Location = new System.Drawing.Point(384, 441);
             this.btnFinishSelecting.Name = "btnFinishSelecting";
-            this.btnFinishSelecting.Size = new System.Drawing.Size(95, 27);
+            this.btnFinishSelecting.Size = new System.Drawing.Size(95, 29);
             this.btnFinishSelecting.TabIndex = 2;
             this.btnFinishSelecting.Text = "选择";
             this.btnFinishSelecting.UseVisualStyleBackColor = true;
@@ -73,17 +74,19 @@
             // 
             this.pagedDgvSupplier.Location = new System.Drawing.Point(6, 1);
             this.pagedDgvSupplier.Name = "pagedDgvSupplier";
-            this.pagedDgvSupplier.Size = new System.Drawing.Size(856, 482);
+            this.pagedDgvSupplier.Size = new System.Drawing.Size(856, 522);
             this.pagedDgvSupplier.TabIndex = 1;
             // 
             // FrmSupplierList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 486);
+            this.ClientSize = new System.Drawing.Size(883, 527);
             this.Controls.Add(this.btnFinishSelecting);
             this.Controls.Add(this.pagedDgvSupplier);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSupplierList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "供应商列表";
             this.Load += new System.EventHandler(this.FrmSupplierList_Load);
             this.contextMenuStripSupplier.ResumeLayout(false);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditItemStockInNote));
             this.textBoxItemSKU = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,7 +44,7 @@
             // 
             // textBoxItemSKU
             // 
-            this.textBoxItemSKU.Location = new System.Drawing.Point(113, 45);
+            this.textBoxItemSKU.Location = new System.Drawing.Point(170, 48);
             this.textBoxItemSKU.Name = "textBoxItemSKU";
             this.textBoxItemSKU.Size = new System.Drawing.Size(165, 20);
             this.textBoxItemSKU.TabIndex = 1;
@@ -53,22 +54,22 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(43, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(69, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "商品SKU";
+            this.label1.Text = "Product SKU";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(43, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(121, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "采购单号";
+            this.label2.Text = "Purchase Order Number";
             // 
             // textBoxSourcingNoteId
             // 
-            this.textBoxSourcingNoteId.Location = new System.Drawing.Point(113, 98);
+            this.textBoxSourcingNoteId.Location = new System.Drawing.Point(170, 95);
             this.textBoxSourcingNoteId.Name = "textBoxSourcingNoteId";
             this.textBoxSourcingNoteId.Size = new System.Drawing.Size(165, 20);
             this.textBoxSourcingNoteId.TabIndex = 4;
@@ -78,13 +79,13 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(43, 158);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.Size = new System.Drawing.Size(102, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "入库数量";
+            this.label3.Text = "Warehouse Number";
             // 
             // textBoxStockInNum
             // 
-            this.textBoxStockInNum.Location = new System.Drawing.Point(113, 158);
+            this.textBoxStockInNum.Location = new System.Drawing.Point(170, 155);
             this.textBoxStockInNum.Name = "textBoxStockInNum";
             this.textBoxStockInNum.Size = new System.Drawing.Size(165, 20);
             this.textBoxStockInNum.TabIndex = 6;
@@ -94,15 +95,15 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(43, 211);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.Size = new System.Drawing.Size(70, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "入库时间";
+            this.label4.Text = "Storage Time";
             // 
             // dateTimePickerStockInTime
             // 
             this.dateTimePickerStockInTime.CustomFormat = "yyyy-MM-dd";
             this.dateTimePickerStockInTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerStockInTime.Location = new System.Drawing.Point(113, 211);
+            this.dateTimePickerStockInTime.Location = new System.Drawing.Point(170, 211);
             this.dateTimePickerStockInTime.Name = "dateTimePickerStockInTime";
             this.dateTimePickerStockInTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dateTimePickerStockInTime.Size = new System.Drawing.Size(165, 20);
@@ -110,11 +111,11 @@
             // 
             // buttonFinishEditingItemStockInNote
             // 
-            this.buttonFinishEditingItemStockInNote.Location = new System.Drawing.Point(203, 329);
+            this.buttonFinishEditingItemStockInNote.Location = new System.Drawing.Point(189, 306);
             this.buttonFinishEditingItemStockInNote.Name = "buttonFinishEditingItemStockInNote";
-            this.buttonFinishEditingItemStockInNote.Size = new System.Drawing.Size(75, 23);
+            this.buttonFinishEditingItemStockInNote.Size = new System.Drawing.Size(97, 33);
             this.buttonFinishEditingItemStockInNote.TabIndex = 9;
-            this.buttonFinishEditingItemStockInNote.Text = "确定";
+            this.buttonFinishEditingItemStockInNote.Text = "Confirm";
             this.buttonFinishEditingItemStockInNote.UseVisualStyleBackColor = true;
             this.buttonFinishEditingItemStockInNote.Click += new System.EventHandler(this.buttonFinishEditingItemStockInNote_Click);
             // 
@@ -123,13 +124,13 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(41, 263);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 10;
-            this.label5.Text = "备注";
+            this.label5.Text = "Notes";
             // 
             // textBoxComment
             // 
-            this.textBoxComment.Location = new System.Drawing.Point(113, 256);
+            this.textBoxComment.Location = new System.Drawing.Point(170, 260);
             this.textBoxComment.Name = "textBoxComment";
             this.textBoxComment.Size = new System.Drawing.Size(165, 20);
             this.textBoxComment.TabIndex = 11;
@@ -138,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 374);
+            this.ClientSize = new System.Drawing.Size(379, 350);
             this.Controls.Add(this.textBoxComment);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonFinishEditingItemStockInNote);
@@ -150,8 +151,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxItemSKU);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmEditItemStockInNote";
-            this.Text = "创建入库单";
+            this.Text = "Create List";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUserMessage));
             this.tabControlUserMessage = new System.Windows.Forms.TabControl();
             this.tabPageAllMessage = new System.Windows.Forms.TabPage();
             this.dataGridViewTransactionMessageSubject = new System.Windows.Forms.DataGridView();
@@ -44,10 +45,10 @@
             // tabControlUserMessage
             // 
             this.tabControlUserMessage.Controls.Add(this.tabPageAllMessage);
-            this.tabControlUserMessage.Location = new System.Drawing.Point(12, 173);
+            this.tabControlUserMessage.Location = new System.Drawing.Point(12, 187);
             this.tabControlUserMessage.Name = "tabControlUserMessage";
             this.tabControlUserMessage.SelectedIndex = 0;
-            this.tabControlUserMessage.Size = new System.Drawing.Size(746, 390);
+            this.tabControlUserMessage.Size = new System.Drawing.Size(746, 423);
             this.tabControlUserMessage.TabIndex = 2;
             // 
             // tabPageAllMessage
@@ -55,17 +56,17 @@
             this.tabPageAllMessage.Location = new System.Drawing.Point(4, 22);
             this.tabPageAllMessage.Name = "tabPageAllMessage";
             this.tabPageAllMessage.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAllMessage.Size = new System.Drawing.Size(738, 364);
+            this.tabPageAllMessage.Size = new System.Drawing.Size(738, 397);
             this.tabPageAllMessage.TabIndex = 0;
             this.tabPageAllMessage.UseVisualStyleBackColor = true;
             // 
             // dataGridViewTransactionMessageSubject
             // 
             this.dataGridViewTransactionMessageSubject.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTransactionMessageSubject.Location = new System.Drawing.Point(12, 12);
+            this.dataGridViewTransactionMessageSubject.Location = new System.Drawing.Point(12, 13);
             this.dataGridViewTransactionMessageSubject.Name = "dataGridViewTransactionMessageSubject";
             this.dataGridViewTransactionMessageSubject.RowTemplate.Height = 23;
-            this.dataGridViewTransactionMessageSubject.Size = new System.Drawing.Size(746, 119);
+            this.dataGridViewTransactionMessageSubject.Size = new System.Drawing.Size(746, 129);
             this.dataGridViewTransactionMessageSubject.TabIndex = 3;
             this.dataGridViewTransactionMessageSubject.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTransactionMessageSubject_CellContentClick);
             this.dataGridViewTransactionMessageSubject.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTransactionMessageSubject_CellContentClick);
@@ -75,9 +76,9 @@
             // 
             // buttonAskBuyer
             // 
-            this.buttonAskBuyer.Location = new System.Drawing.Point(671, 148);
+            this.buttonAskBuyer.Location = new System.Drawing.Point(671, 160);
             this.buttonAskBuyer.Name = "buttonAskBuyer";
-            this.buttonAskBuyer.Size = new System.Drawing.Size(87, 35);
+            this.buttonAskBuyer.Size = new System.Drawing.Size(87, 38);
             this.buttonAskBuyer.TabIndex = 0;
             this.buttonAskBuyer.Text = "给买家写信";
             this.buttonAskBuyer.UseVisualStyleBackColor = true;
@@ -85,9 +86,9 @@
             // 
             // buttonReplyMessage
             // 
-            this.buttonReplyMessage.Location = new System.Drawing.Point(556, 148);
+            this.buttonReplyMessage.Location = new System.Drawing.Point(556, 160);
             this.buttonReplyMessage.Name = "buttonReplyMessage";
-            this.buttonReplyMessage.Size = new System.Drawing.Size(87, 35);
+            this.buttonReplyMessage.Size = new System.Drawing.Size(87, 38);
             this.buttonReplyMessage.TabIndex = 4;
             this.buttonReplyMessage.Text = "回复消息";
             this.buttonReplyMessage.UseVisualStyleBackColor = true;
@@ -98,26 +99,28 @@
             this.contextMenuStripMsg.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItemMarkAsReplied});
             this.contextMenuStripMsg.Name = "contextMenuStripMsg";
-            this.contextMenuStripMsg.Size = new System.Drawing.Size(153, 48);
+            this.contextMenuStripMsg.Size = new System.Drawing.Size(135, 26);
             this.contextMenuStripMsg.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStripMsg_Opening);
             // 
             // ToolStripMenuItemMarkAsReplied
             // 
             this.ToolStripMenuItemMarkAsReplied.Name = "ToolStripMenuItemMarkAsReplied";
-            this.ToolStripMenuItemMarkAsReplied.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItemMarkAsReplied.Size = new System.Drawing.Size(134, 22);
             this.ToolStripMenuItemMarkAsReplied.Text = "标记已回复";
             this.ToolStripMenuItemMarkAsReplied.Click += new System.EventHandler(this.ToolStripMenuItemMarkAsReplied_Click);
             // 
             // FrmUserMessage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 570);
+            this.ClientSize = new System.Drawing.Size(770, 618);
             this.Controls.Add(this.buttonReplyMessage);
             this.Controls.Add(this.buttonAskBuyer);
             this.Controls.Add(this.dataGridViewTransactionMessageSubject);
             this.Controls.Add(this.tabControlUserMessage);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmUserMessage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "站内消息";
             this.Load += new System.EventHandler(this.FrmUserMessage_Load);
             this.tabControlUserMessage.ResumeLayout(false);

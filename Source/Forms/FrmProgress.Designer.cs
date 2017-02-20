@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProgress));
             this.labelHint = new System.Windows.Forms.Label();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.buttonCancel = new System.Windows.Forms.Button();
@@ -36,25 +37,25 @@
             // labelHint
             // 
             this.labelHint.AutoSize = true;
-            this.labelHint.Location = new System.Drawing.Point(27, 20);
+            this.labelHint.Location = new System.Drawing.Point(27, 22);
             this.labelHint.Name = "labelHint";
-            this.labelHint.Size = new System.Drawing.Size(83, 12);
+            this.labelHint.Size = new System.Drawing.Size(76, 13);
             this.labelHint.TabIndex = 0;
             this.labelHint.Text = "正准备下载...";
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(29, 45);
+            this.progressBar.Location = new System.Drawing.Point(29, 49);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(453, 23);
+            this.progressBar.Size = new System.Drawing.Size(453, 25);
             this.progressBar.TabIndex = 1;
             // 
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(407, 91);
+            this.buttonCancel.Location = new System.Drawing.Point(407, 99);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(75, 25);
             this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "取消";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -62,13 +63,15 @@
             // 
             // FrmProgress
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 132);
+            this.ClientSize = new System.Drawing.Size(494, 143);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.labelHint);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmProgress";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "下载进度";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmProgress_FormClosing);
             this.ResumeLayout(false);

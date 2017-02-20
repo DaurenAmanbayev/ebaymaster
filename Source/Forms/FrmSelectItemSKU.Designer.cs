@@ -30,22 +30,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSelectItemSKU));
             this.treeViewItems = new System.Windows.Forms.TreeView();
             this.buttonConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // treeViewItems
             // 
-            this.treeViewItems.Location = new System.Drawing.Point(31, 12);
+            this.treeViewItems.Location = new System.Drawing.Point(31, 13);
             this.treeViewItems.Name = "treeViewItems";
-            this.treeViewItems.Size = new System.Drawing.Size(418, 417);
+            this.treeViewItems.Size = new System.Drawing.Size(418, 451);
             this.treeViewItems.TabIndex = 27;
             // 
             // buttonConfirm
             // 
-            this.buttonConfirm.Location = new System.Drawing.Point(478, 396);
+            this.buttonConfirm.Location = new System.Drawing.Point(478, 429);
             this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfirm.Size = new System.Drawing.Size(75, 25);
             this.buttonConfirm.TabIndex = 28;
             this.buttonConfirm.Text = "确定";
             this.buttonConfirm.UseVisualStyleBackColor = true;
@@ -53,11 +54,12 @@
             // 
             // FrmSelectItemSKU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 442);
+            this.ClientSize = new System.Drawing.Size(578, 479);
             this.Controls.Add(this.buttonConfirm);
             this.Controls.Add(this.treeViewItems);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSelectItemSKU";
             this.Text = "FrmSelectItemSKU";
             this.Load += new System.EventHandler(this.FrmSelectItemSKU_Load);

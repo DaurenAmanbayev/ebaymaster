@@ -47,7 +47,7 @@
             // 
             this.ToolStripMenuItemDelDeliveryNote.Name = "ToolStripMenuItemDelDeliveryNote";
             this.ToolStripMenuItemDelDeliveryNote.Size = new System.Drawing.Size(134, 22);
-            this.ToolStripMenuItemDelDeliveryNote.Text = "删除发货单";
+            this.ToolStripMenuItemDelDeliveryNote.Text = "Delete Invoice";
             this.ToolStripMenuItemDelDeliveryNote.Click += new System.EventHandler(this.ToolStripMenuItemDelDeliveryNote_Click);
             // 
             // pagedDgvDeliveryNote

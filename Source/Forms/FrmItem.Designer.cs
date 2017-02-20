@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmItem));
             this.treeViewCategories = new System.Windows.Forms.TreeView();
             this.contextMenuStripItem = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItemDelItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,9 +76,9 @@
             // treeViewCategories
             // 
             this.treeViewCategories.AllowDrop = true;
-            this.treeViewCategories.Location = new System.Drawing.Point(23, 59);
+            this.treeViewCategories.Location = new System.Drawing.Point(23, 64);
             this.treeViewCategories.Name = "treeViewCategories";
-            this.treeViewCategories.Size = new System.Drawing.Size(255, 435);
+            this.treeViewCategories.Size = new System.Drawing.Size(255, 471);
             this.treeViewCategories.TabIndex = 26;
             this.treeViewCategories.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.treeViewCategories_ItemDrag);
             this.treeViewCategories.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewCategories_AfterSelect);
@@ -90,21 +91,21 @@
             this.contextMenuStripItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItemDelItem});
             this.contextMenuStripItem.Name = "contextMenuStripItem";
-            this.contextMenuStripItem.Size = new System.Drawing.Size(125, 26);
+            this.contextMenuStripItem.Size = new System.Drawing.Size(123, 26);
             // 
             // ToolStripMenuItemDelItem
             // 
             this.ToolStripMenuItemDelItem.Name = "ToolStripMenuItemDelItem";
-            this.ToolStripMenuItemDelItem.Size = new System.Drawing.Size(124, 22);
+            this.ToolStripMenuItemDelItem.Size = new System.Drawing.Size(122, 22);
             this.ToolStripMenuItemDelItem.Text = "删除商品";
             this.ToolStripMenuItemDelItem.Click += new System.EventHandler(this.ToolStripMenuItemDelItem_Click);
             // 
             // buttonDelItem
             // 
             this.buttonDelItem.Enabled = false;
-            this.buttonDelItem.Location = new System.Drawing.Point(192, 20);
+            this.buttonDelItem.Location = new System.Drawing.Point(192, 22);
             this.buttonDelItem.Name = "buttonDelItem";
-            this.buttonDelItem.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelItem.Size = new System.Drawing.Size(75, 25);
             this.buttonDelItem.TabIndex = 2;
             this.buttonDelItem.Text = "删除商品";
             this.buttonDelItem.UseVisualStyleBackColor = true;
@@ -114,10 +115,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(300, 21);
+            this.tabControl1.Location = new System.Drawing.Point(300, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(653, 507);
+            this.tabControl1.Size = new System.Drawing.Size(653, 549);
             this.tabControl1.TabIndex = 33;
             // 
             // tabPage1
@@ -147,7 +148,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(645, 481);
+            this.tabPage1.Size = new System.Drawing.Size(645, 523);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "商品基本信息";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -155,9 +156,9 @@
             // buttonCancel
             // 
             this.buttonCancel.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonCancel.Location = new System.Drawing.Point(488, 328);
+            this.buttonCancel.Location = new System.Drawing.Point(488, 355);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(75, 25);
             this.buttonCancel.TabIndex = 13;
             this.buttonCancel.Text = "取消";
             this.buttonCancel.UseVisualStyleBackColor = false;
@@ -166,40 +167,40 @@
             // 
             // textBoxItemImagePath
             // 
-            this.textBoxItemImagePath.Location = new System.Drawing.Point(101, 121);
+            this.textBoxItemImagePath.Location = new System.Drawing.Point(101, 131);
             this.textBoxItemImagePath.Name = "textBoxItemImagePath";
-            this.textBoxItemImagePath.Size = new System.Drawing.Size(171, 21);
+            this.textBoxItemImagePath.Size = new System.Drawing.Size(171, 20);
             this.textBoxItemImagePath.TabIndex = 5;
             // 
             // textBoxItemCustomValue
             // 
-            this.textBoxItemCustomValue.Location = new System.Drawing.Point(390, 163);
+            this.textBoxItemCustomValue.Location = new System.Drawing.Point(390, 177);
             this.textBoxItemCustomValue.Name = "textBoxItemCustomValue";
-            this.textBoxItemCustomValue.Size = new System.Drawing.Size(229, 21);
+            this.textBoxItemCustomValue.Size = new System.Drawing.Size(229, 20);
             this.textBoxItemCustomValue.TabIndex = 10;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(309, 163);
+            this.label12.Location = new System.Drawing.Point(309, 177);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(71, 12);
+            this.label12.Size = new System.Drawing.Size(67, 13);
             this.label12.TabIndex = 54;
             this.label12.Text = "报关价值($)";
             // 
             // textBoxItemCustomWeight
             // 
-            this.textBoxItemCustomWeight.Location = new System.Drawing.Point(390, 111);
+            this.textBoxItemCustomWeight.Location = new System.Drawing.Point(390, 120);
             this.textBoxItemCustomWeight.Name = "textBoxItemCustomWeight";
-            this.textBoxItemCustomWeight.Size = new System.Drawing.Size(229, 21);
+            this.textBoxItemCustomWeight.Size = new System.Drawing.Size(229, 20);
             this.textBoxItemCustomWeight.TabIndex = 9;
             // 
             // buttonAddOrModifyItem
             // 
             this.buttonAddOrModifyItem.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonAddOrModifyItem.Location = new System.Drawing.Point(390, 328);
+            this.buttonAddOrModifyItem.Location = new System.Drawing.Point(390, 355);
             this.buttonAddOrModifyItem.Name = "buttonAddOrModifyItem";
-            this.buttonAddOrModifyItem.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddOrModifyItem.Size = new System.Drawing.Size(75, 25);
             this.buttonAddOrModifyItem.TabIndex = 12;
             this.buttonAddOrModifyItem.Text = "新增完成";
             this.buttonAddOrModifyItem.UseVisualStyleBackColor = false;
@@ -208,82 +209,82 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(309, 111);
+            this.label11.Location = new System.Drawing.Point(309, 120);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 12);
+            this.label11.Size = new System.Drawing.Size(73, 13);
             this.label11.TabIndex = 52;
             this.label11.Text = "报关重量(kg)";
             // 
             // textBoxCustomName
             // 
-            this.textBoxCustomName.Location = new System.Drawing.Point(390, 65);
+            this.textBoxCustomName.Location = new System.Drawing.Point(390, 70);
             this.textBoxCustomName.Name = "textBoxCustomName";
-            this.textBoxCustomName.Size = new System.Drawing.Size(229, 21);
+            this.textBoxCustomName.Size = new System.Drawing.Size(229, 20);
             this.textBoxCustomName.TabIndex = 8;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(309, 65);
+            this.label10.Location = new System.Drawing.Point(309, 70);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 12);
+            this.label10.Size = new System.Drawing.Size(43, 13);
             this.label10.TabIndex = 50;
             this.label10.Text = "报关名";
             // 
             // textBoxItemWeight
             // 
-            this.textBoxItemWeight.Location = new System.Drawing.Point(390, 24);
+            this.textBoxItemWeight.Location = new System.Drawing.Point(390, 26);
             this.textBoxItemWeight.Name = "textBoxItemWeight";
-            this.textBoxItemWeight.Size = new System.Drawing.Size(229, 21);
+            this.textBoxItemWeight.Size = new System.Drawing.Size(229, 20);
             this.textBoxItemWeight.TabIndex = 7;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(309, 24);
+            this.label9.Location = new System.Drawing.Point(309, 26);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 12);
+            this.label9.Size = new System.Drawing.Size(67, 13);
             this.label9.TabIndex = 48;
             this.label9.Text = "商品重量(g)";
             // 
             // textBoxItemStock
             // 
-            this.textBoxItemStock.Location = new System.Drawing.Point(390, 257);
+            this.textBoxItemStock.Location = new System.Drawing.Point(390, 278);
             this.textBoxItemStock.Name = "textBoxItemStock";
             this.textBoxItemStock.ReadOnly = true;
-            this.textBoxItemStock.Size = new System.Drawing.Size(229, 21);
+            this.textBoxItemStock.Size = new System.Drawing.Size(229, 20);
             this.textBoxItemStock.TabIndex = 43;
             // 
             // labelCurrentStock
             // 
             this.labelCurrentStock.AutoSize = true;
-            this.labelCurrentStock.Location = new System.Drawing.Point(309, 258);
+            this.labelCurrentStock.Location = new System.Drawing.Point(309, 280);
             this.labelCurrentStock.Name = "labelCurrentStock";
-            this.labelCurrentStock.Size = new System.Drawing.Size(53, 12);
+            this.labelCurrentStock.Size = new System.Drawing.Size(55, 13);
             this.labelCurrentStock.TabIndex = 42;
             this.labelCurrentStock.Text = "当前库存";
             // 
             // textBoxItemStockShreshold
             // 
-            this.textBoxItemStockShreshold.Location = new System.Drawing.Point(390, 208);
+            this.textBoxItemStockShreshold.Location = new System.Drawing.Point(390, 225);
             this.textBoxItemStockShreshold.Name = "textBoxItemStockShreshold";
-            this.textBoxItemStockShreshold.Size = new System.Drawing.Size(229, 21);
+            this.textBoxItemStockShreshold.Size = new System.Drawing.Size(229, 20);
             this.textBoxItemStockShreshold.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(309, 212);
+            this.label5.Location = new System.Drawing.Point(309, 230);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 40;
             this.label5.Text = "库存报警值";
             // 
             // buttonNavigateItemImage
             // 
-            this.buttonNavigateItemImage.Location = new System.Drawing.Point(22, 151);
+            this.buttonNavigateItemImage.Location = new System.Drawing.Point(22, 164);
             this.buttonNavigateItemImage.Name = "buttonNavigateItemImage";
-            this.buttonNavigateItemImage.Size = new System.Drawing.Size(66, 23);
+            this.buttonNavigateItemImage.Size = new System.Drawing.Size(66, 25);
             this.buttonNavigateItemImage.TabIndex = 6;
             this.buttonNavigateItemImage.Text = "浏览";
             this.buttonNavigateItemImage.UseVisualStyleBackColor = true;
@@ -291,50 +292,50 @@
             // 
             // pictureBoxItemPic
             // 
-            this.pictureBoxItemPic.Location = new System.Drawing.Point(22, 183);
+            this.pictureBoxItemPic.Location = new System.Drawing.Point(22, 198);
             this.pictureBoxItemPic.Name = "pictureBoxItemPic";
-            this.pictureBoxItemPic.Size = new System.Drawing.Size(250, 287);
+            this.pictureBoxItemPic.Size = new System.Drawing.Size(250, 311);
             this.pictureBoxItemPic.TabIndex = 38;
             this.pictureBoxItemPic.TabStop = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 121);
+            this.label4.Location = new System.Drawing.Point(20, 131);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 37;
             this.label4.Text = "商品图片";
             // 
             // textBoxItemSKU
             // 
-            this.textBoxItemSKU.Location = new System.Drawing.Point(101, 67);
+            this.textBoxItemSKU.Location = new System.Drawing.Point(101, 73);
             this.textBoxItemSKU.Name = "textBoxItemSKU";
-            this.textBoxItemSKU.Size = new System.Drawing.Size(171, 21);
+            this.textBoxItemSKU.Size = new System.Drawing.Size(171, 20);
             this.textBoxItemSKU.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 67);
+            this.label3.Location = new System.Drawing.Point(20, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 12);
+            this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 35;
             this.label3.Text = "商品SKU";
             // 
             // textBoxItemName
             // 
-            this.textBoxItemName.Location = new System.Drawing.Point(101, 24);
+            this.textBoxItemName.Location = new System.Drawing.Point(101, 26);
             this.textBoxItemName.Name = "textBoxItemName";
-            this.textBoxItemName.Size = new System.Drawing.Size(171, 21);
+            this.textBoxItemName.Size = new System.Drawing.Size(171, 20);
             this.textBoxItemName.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 24);
+            this.label2.Location = new System.Drawing.Point(20, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 33;
             this.label2.Text = "商品名称";
             // 
@@ -346,7 +347,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(645, 481);
+            this.tabPage2.Size = new System.Drawing.Size(645, 523);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "供应商";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -354,9 +355,9 @@
             // buttonDelSupplier
             // 
             this.buttonDelSupplier.Enabled = false;
-            this.buttonDelSupplier.Location = new System.Drawing.Point(216, 405);
+            this.buttonDelSupplier.Location = new System.Drawing.Point(216, 439);
             this.buttonDelSupplier.Name = "buttonDelSupplier";
-            this.buttonDelSupplier.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelSupplier.Size = new System.Drawing.Size(75, 25);
             this.buttonDelSupplier.TabIndex = 2;
             this.buttonDelSupplier.Text = "删除";
             this.buttonDelSupplier.UseVisualStyleBackColor = true;
@@ -364,9 +365,9 @@
             // 
             // buttonSaveItemSupplier
             // 
-            this.buttonSaveItemSupplier.Location = new System.Drawing.Point(357, 405);
+            this.buttonSaveItemSupplier.Location = new System.Drawing.Point(357, 439);
             this.buttonSaveItemSupplier.Name = "buttonSaveItemSupplier";
-            this.buttonSaveItemSupplier.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveItemSupplier.Size = new System.Drawing.Size(75, 25);
             this.buttonSaveItemSupplier.TabIndex = 1;
             this.buttonSaveItemSupplier.Text = "保存";
             this.buttonSaveItemSupplier.UseVisualStyleBackColor = true;
@@ -375,10 +376,10 @@
             // dgvItemSuppliers
             // 
             this.dgvItemSuppliers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvItemSuppliers.Location = new System.Drawing.Point(18, 26);
+            this.dgvItemSuppliers.Location = new System.Drawing.Point(18, 28);
             this.dgvItemSuppliers.Name = "dgvItemSuppliers";
             this.dgvItemSuppliers.RowTemplate.Height = 23;
-            this.dgvItemSuppliers.Size = new System.Drawing.Size(611, 317);
+            this.dgvItemSuppliers.Size = new System.Drawing.Size(611, 343);
             this.dgvItemSuppliers.TabIndex = 0;
             this.dgvItemSuppliers.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvItemSuppliers_CellBeginEdit);
             this.dgvItemSuppliers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemSuppliers_CellContentDoubleClick);
@@ -388,9 +389,9 @@
             // buttonDupItem
             // 
             this.buttonDupItem.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonDupItem.Location = new System.Drawing.Point(109, 20);
+            this.buttonDupItem.Location = new System.Drawing.Point(109, 22);
             this.buttonDupItem.Name = "buttonDupItem";
-            this.buttonDupItem.Size = new System.Drawing.Size(75, 23);
+            this.buttonDupItem.Size = new System.Drawing.Size(75, 25);
             this.buttonDupItem.TabIndex = 1;
             this.buttonDupItem.Text = "复制新增";
             this.buttonDupItem.UseVisualStyleBackColor = false;
@@ -399,9 +400,9 @@
             // buttonNewItem
             // 
             this.buttonNewItem.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonNewItem.Location = new System.Drawing.Point(23, 21);
+            this.buttonNewItem.Location = new System.Drawing.Point(23, 23);
             this.buttonNewItem.Name = "buttonNewItem";
-            this.buttonNewItem.Size = new System.Drawing.Size(75, 23);
+            this.buttonNewItem.Size = new System.Drawing.Size(75, 25);
             this.buttonNewItem.TabIndex = 0;
             this.buttonNewItem.Text = "空白新增";
             this.buttonNewItem.UseVisualStyleBackColor = false;
@@ -411,24 +412,26 @@
             // 
             this.labelStatus.AutoSize = true;
             this.labelStatus.ForeColor = System.Drawing.Color.Green;
-            this.labelStatus.Location = new System.Drawing.Point(21, 512);
+            this.labelStatus.Location = new System.Drawing.Point(21, 555);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(29, 12);
+            this.labelStatus.Size = new System.Drawing.Size(31, 13);
             this.labelStatus.TabIndex = 59;
             this.labelStatus.Text = "状态";
             // 
             // FrmItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 543);
+            this.ClientSize = new System.Drawing.Size(966, 588);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.buttonNewItem);
             this.Controls.Add(this.buttonDupItem);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.treeViewCategories);
             this.Controls.Add(this.buttonDelItem);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmItem";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "商品信息 - 可拖动商品至其他类别";
             this.Load += new System.EventHandler(this.FrmItem_Load);
             this.contextMenuStripItem.ResumeLayout(false);

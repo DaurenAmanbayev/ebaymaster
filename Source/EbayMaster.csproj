@@ -363,6 +363,9 @@
       <DependentUpon>FrmUserMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Spalsh.resx" />
+    <EmbeddedResource Include="Forms\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

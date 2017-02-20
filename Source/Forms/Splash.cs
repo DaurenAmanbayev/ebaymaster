@@ -133,5 +133,19 @@ namespace Splasher
         private Bitmap m_bmp;
         private DelegateCloseSplash m_delegateClose;
         #endregion
+
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
+            this.SuspendLayout();
+            // 
+            // SplashForm
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "SplashForm";
+            this.ResumeLayout(false);
+
+        }
     }
 }

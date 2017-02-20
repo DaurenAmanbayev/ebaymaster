@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditDeliveryNote));
             this.dataGridViewTransactions = new System.Windows.Forms.DataGridView();
             this.buttonAddTransaction = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,7 +66,7 @@
             this.buttonAddTransaction.Name = "buttonAddTransaction";
             this.buttonAddTransaction.Size = new System.Drawing.Size(75, 25);
             this.buttonAddTransaction.TabIndex = 1;
-            this.buttonAddTransaction.Text = "添加";
+            this.buttonAddTransaction.Text = "Add";
             this.buttonAddTransaction.UseVisualStyleBackColor = true;
             this.buttonAddTransaction.Click += new System.EventHandler(this.buttonAddTransaction_Click);
             // 
@@ -74,13 +75,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(19, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "订单号";
+            this.label1.Text = "Order Number";
             // 
             // textBoxTransactionId
             // 
-            this.textBoxTransactionId.Location = new System.Drawing.Point(79, 23);
+            this.textBoxTransactionId.Location = new System.Drawing.Point(98, 24);
             this.textBoxTransactionId.Name = "textBoxTransactionId";
             this.textBoxTransactionId.Size = new System.Drawing.Size(508, 20);
             this.textBoxTransactionId.TabIndex = 3;
@@ -91,9 +92,9 @@
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(101, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(234, 13);
+            this.label2.Size = new System.Drawing.Size(325, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "( 多个订单以逗号或空格间隔，如1000 1001 )";
+            this.label2.Text = "(Multiple orders in a comma or a space interval, such as 1000 1001)";
             // 
             // buttonAddDeliveryNote
             // 
@@ -101,7 +102,7 @@
             this.buttonAddDeliveryNote.Name = "buttonAddDeliveryNote";
             this.buttonAddDeliveryNote.Size = new System.Drawing.Size(75, 25);
             this.buttonAddDeliveryNote.TabIndex = 5;
-            this.buttonAddDeliveryNote.Text = "完成";
+            this.buttonAddDeliveryNote.Text = "Finish";
             this.buttonAddDeliveryNote.UseVisualStyleBackColor = true;
             this.buttonAddDeliveryNote.Click += new System.EventHandler(this.buttonAddDeliveryNote_Click);
             // 
@@ -112,7 +113,7 @@
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 25);
             this.buttonCancel.TabIndex = 6;
-            this.buttonCancel.Text = "取消";
+            this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
@@ -136,18 +137,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(19, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "运费";
+            this.label3.Text = "Freight";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(228, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "其他费用";
+            this.label4.Text = "Other Costs";
             // 
             // textBoxFee
             // 
@@ -168,9 +169,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(455, 92);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 11;
-            this.label5.Text = "备注";
+            this.label5.Text = "Notes";
             // 
             // textBoxComment
             // 
@@ -197,8 +198,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAddTransaction);
             this.Controls.Add(this.dataGridViewTransactions);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmEditDeliveryNote";
-            this.Text = "创建发货单";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Create Invoice";
             this.Load += new System.EventHandler(this.FrmDeliveryNote_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransactions)).EndInit();
             this.contextMenuStripTransaction.ResumeLayout(false);
